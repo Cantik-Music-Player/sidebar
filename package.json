@@ -1,0 +1,24 @@
+{
+  "name": "sidebar",
+  "main": "./lib/sidebar",
+  "version": "0.0.1",
+  "description": "Create a sidebar in Cantik",
+  "repository": "https://github.com/Cantik-Music-Player/sidebar",
+  "license": "MIT",
+  "engines": {
+    "cantik": "*"
+  },
+  "dependencies": {
+    "coffee-react": "^5.0.0",
+    "react": "^15.0.2",
+    "react-dom": "^15.0.2"
+  },
+  "devDependencies": {
+    "coffee-coverage": "^1.0.1",
+    "istanbul": "^0.4.3",
+    "jsdom": "^9.4.2",
+    "mocha": "^3.0.2",
+    "mocha-jsdom": "^1.1.0",
+    "sinon": "^1.17.3"
+  }
+}
