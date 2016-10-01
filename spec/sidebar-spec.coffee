@@ -9,7 +9,6 @@ describe "Sidebar", ->
 
   it "Initialized", ->
     assert.deepEqual(@sidebar.links, {})
-    assert(Sidebar.prototype.show.called)
 
   it "Add link", ->
     @sidebar.addLink('test1', 'cat1', 'func4', true)

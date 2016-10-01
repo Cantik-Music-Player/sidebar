@@ -9,7 +9,6 @@ class Sidebar
 
   activate: (state) ->
     @sidebarView = new SidebarView(@links, @cantik)
-    @links = {}
 
   deactivate: ->
     @sidebarView.destroy()
