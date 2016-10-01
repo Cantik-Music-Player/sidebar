@@ -31,7 +31,6 @@ module.exports.SidebarView =
 class SidebarView
   constructor: (@links, @cantik) ->
     @element = document.createElement('div')
-    console.log @element
     ReactDOM.render(
       <SidebarComponent links=@links cantik=@cantik />,
       @element
