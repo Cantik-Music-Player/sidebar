@@ -6,6 +6,7 @@ describe "Sidebar", ->
   beforeEach ->
     Sidebar.prototype.show = sinon.spy()
     @sidebar = new Sidebar('pluginManager', 'element')
+    @sidebar.activate = ->
 
   it "Initialized", ->
     assert.deepEqual(@sidebar.links, {})

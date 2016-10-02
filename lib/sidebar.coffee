@@ -11,7 +11,8 @@ class Sidebar
     @sidebarView = new SidebarView(@links, @cantik)
 
   deactivate: ->
-    @sidebarView.destroy()
+    if @centralAreaView?
+      @sidebarView.destroy()
 
   serialize: ->
     sidebarViewState: @sidebarView.serialize()
@@ -32,5 +33,6 @@ class Sidebar
       do onClick if onClick?
 
     @links[category].push({'title': name, 'onClick': onClickWithHistory, 'active': active, 'dataToggle': dataToggle})
-    do @show
+    do @deactivate
+    do @activate
     active
