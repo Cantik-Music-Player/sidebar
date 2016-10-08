@@ -29,7 +29,7 @@ class Sidebar
     # Call given onclick after adding tab to history
     onClickWithHistory = (e) =>
       target = e.target
-      @pluginManager.plugins.history.addHistoryEntry(-> target.click())
+      @cantik.pluginManager.plugins.history.addHistoryEntry(-> target.click())
       do onClick if onClick?
 
     @links[category].push({'title': name, 'onClick': onClickWithHistory, 'active': active, 'dataToggle': dataToggle})
