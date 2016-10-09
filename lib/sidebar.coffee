@@ -11,7 +11,7 @@ class Sidebar
     @sidebarView = new SidebarView(@links, @cantik)
 
   deactivate: ->
-    if @centralAreaView?
+    if @sidebarView?
       @sidebarView.destroy()
 
   serialize: ->
